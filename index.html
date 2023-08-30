@@ -10,55 +10,31 @@
 </head>
 
 <body>
-    <header>
-        <h2 class="text-6xl">Hunting Phone</h2>
-    </header>
-    <main class="container mx-auto mt-8">
+<main>
+    <nav class="flex gap-4">
+        <button>Home</button>
+        <button>iPhone</button>
+        <button>Samsung</button>
+        <input id="search-field" type="text" placeholder="search...">
+        <button>Search</button>
+    </nav>
+    <section id="phones-all">
 
-        <section class="bg-gray-100 p-4 m-4">
-            <input id="search-field" type="text" placeholder="search..." class="input input-bordered w-full max-w-xs" />
-            <button onclick="handleSearch()" class="btn btn-accent">Search</button>
-            <!-- another search field -->
-            <!-- <input type="text" id="search-field2" placeholder="Search here" class="input input-bordered w-full max-w-xs" />
-            <button onclick="handleSearch2()" class="btn btn-active btn-primary">Search</button> -->
-
-        </section>
-
-
-        <!-- search result -->
-        <section>
-            <!-- spinner or loader -->
-            <div id="loading-spinner" class="text-center my-40 hidden">
-                <span class="loading loading-spinner text-primary loading-lg"></span>
-            </div>
-            <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            </div>
-            <!-- show all button -->
-            <div id="show-all-container" class="hidden text-center my-8">
-                <button onclick="handleShowAll()" class="btn btn-accent">Show All</button>
-            </div>
-        </section>
-
-        <!-- Show Details modal -->
-        <!-- Open the modal using ID.showModal() method -->
-        <dialog id="show_details_modal" class="modal modal-bottom sm:modal-middle">
-            <form method="dialog" class="modal-box">
-                <h3 id="show-detail-phone-name" class="font-bold text-3xl"></h3>
-                <div id="show-detail-container">
-
-                </div>
-                <div class="modal-action">
-                    <!-- if there is a button in form, it will close the modal -->
-                    <button class="btn">Close</button>
-                </div>
-            </form>
-        </dialog>
-
-    </main>
-    <footer>
-
-    </footer>
-    <script src="phone.js"></script>
+    </section>
+</main>
+<footer class="flex gap-5">
+    <div id="1" class="">1</div>
+    <div id="2" class="">2</div>
+    <div id="3" class="">3</div>
+    <div id="4" class="">4</div>
+    <div id="5" class="">5</div>
+    <div id="6" class="">6</div>
+    <div id="7" class="">7</div>
+    <div id="8" class="">8</div>
+    <div id="9" class="">9</div>
+    <div id="10" class="">10</div>
+</footer>
+<script src="api.js"></script>
 </body>
 
 </html>
